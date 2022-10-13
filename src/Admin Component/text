@@ -1,0 +1,135 @@
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addUser } from "../Redux/Action/action";
+export const Addnewuser = () => {
+  const [userdata, setuserdata] = useState({
+    first_name: "",
+    last_name: "",
+    user_name: "",
+    password: "",
+    address: "",
+    gender: "",
+    status: "active",
+  });
+  const getusername = localStorage.getItem("username");
+  useEffect(() => {
+    if (getusername) {
+      navigate("/admin/adduser");
+    } else {
+      navigate("/");
+    }
+  }, [getusername]);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const onSubmit = () => {
+    dispatch(addUser(userdata));
+    navigate("/admin/users");
+  };
+  return (
+    <>
+      <div className="user_body-container">
+        <div className="updateuser_show_list">
+          <div className="list_header">
+            <div>Add New User</div>
+          </div>
+          <div className="list_body">
+            <div className="user_title">
+              <label>First Name</label>
+              <input
+                type="text"
+                className="input-text"
+                value={userdata.first_name}
+                onChange={(e) => {
+                  setuserdata({ ...userdata, first_name: e.target.value });
+                }}
+              />
+            </div>
+            <div className="user_title">
+              <label>Last Name</label>
+              <input
+                type="text"
+                className="input-text"
+                value={userdata.last_name}
+                onChange={(e) => {
+                  setuserdata({ ...userdata, last_name: e.target.value });
+                }}
+              />
+            </div>
+            <div className="user_title">
+              <label>Username</label>
+              <input
+                type="text"
+                className="input-text"
+                value={userdata.user_name}
+                onChange={(e) => {
+                  setuserdata({ ...userdata, user_name: e.target.value });
+                }}
+              />
+            </div>
+            <div className="user_title">
+              <label>Password</label>
+              <input
+                type="text"
+                className="input-text"
+                value={userdata.password}
+                onChange={(e) => {
+                  setuserdata({ ...userdata, password: e.target.value });
+                }}
+              />
+            </div>
+            <div className="user_title">
+              <label>Address</label>
+              <input
+                type="text"
+                className="input-text"
+                value={userdata.address}
+                onChange={(e) => {
+                  setuserdata({ ...userdata, address: e.target.value });
+                }}
+              />
+            </div>
+            <div className="user_title">
+              <label>Gender</label>
+              <div className="input-text">
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  onChange={(e) => {
+                    setuserdata({ ...userdata, gender: e.target.value });
+                  }}
+                />
+                <label>Male</label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  onChange={(e) => {
+                    setuserdata({ ...userdata, gender: e.target.value });
+                  }}
+                />
+                <label>Female</label>
+              </div>
+            </div>
+            <div className="user_title">
+              <label>Status</label>
+              <select
+                className="input-text"
+                onChange={(e) => {
+                  setuserdata({ ...userdata, status: e.target.value });
+                }}
+              >
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+              </select>
+            </div>
+            <div className="user_title">
+              <button onClick={onSubmit}>Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
