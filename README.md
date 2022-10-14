@@ -1,3 +1,28 @@
+# Helios Web Services Assignment 
+
+- This is Admin portal to manage users.
+
+This portal is following pages and functionalities. 
+-  Login
+- Dashboard
+- Admin User
+- User Creation
+- User Updation
+- User Deletion
+- Search of users
+- Filters
+
+
+![Screenshot (138)](https://user-images.githubusercontent.com/69181889/195771243-62433928-34bb-43fa-9282-b68ca367f9c3.png)
+![Screenshot (139)](https://user-images.githubusercontent.com/69181889/195771254-326e04f1-89ab-4c9e-a1a7-cf6cf5dfa12c.png)
+![Screenshot (140)](https://user-images.githubusercontent.com/69181889/195771259-b577252f-8bb7-4389-b52d-02ce75dc59f7.png)
+![Screenshot (141)](https://user-images.githubusercontent.com/69181889/195771262-fcd64a5e-a0db-44fb-a577-d758ff46e55d.png)
+![Screenshot (142)](https://user-images.githubusercontent.com/69181889/195771264-bbd35702-dc5a-48e4-a19d-ee9eecb41fdf.png)
+![Screenshot (143)](https://user-images.githubusercontent.com/69181889/195771268-5938f7c0-80a8-4df7-8a6a-1cbb71370440.png)
+![Screenshot (144)](https://user-images.githubusercontent.com/69181889/195771270-f8881f3e-3762-4728-b562-f128d0cd1b2b.png)
+![Screenshot (145)](https://user-images.githubusercontent.com/69181889/195771272-88d96bd6-00ec-4c4f-bff5-8f73dc8e72bd.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
