@@ -12,6 +12,16 @@ This portal is following pages and functionalities.
 - Search of users
 - Filters
 
+Tech Stack used: React, Redux, CSS, Bootstrap
+
+Features: 
+- Admin should see a list of users with basic info such as username, first name, last name
+and status(active/inactive) with action buttons (View, Delete)
+- Admin should be able to add a user from this page so add a create user button.
+- Admin should be able to search users by name, username
+- Add a filter along with search bar to filter by status and gender. 
+- Admin can update all information of the user
+
 
 ![Screenshot (138)](https://user-images.githubusercontent.com/69181889/195771243-62433928-34bb-43fa-9282-b68ca367f9c3.png)
 ![Screenshot (139)](https://user-images.githubusercontent.com/69181889/195771254-326e04f1-89ab-4c9e-a1a7-cf6cf5dfa12c.png)
