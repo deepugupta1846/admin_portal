@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <div className="nav-container">
         <div className="nav-logo">
-          <h2>Assignment</h2>
+          <h2>Admin Portal</h2>
         </div>
       </div>
     </>

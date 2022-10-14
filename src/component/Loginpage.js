@@ -31,8 +31,7 @@ export const Loginpage = () => {
     <>
       <div className="form-container">
         <div className="login_form">
-          <div className="title">Assignment</div>
-          <div className="sub_title">Login Form</div>
+          <div className="title">Login </div>
           <form onSubmit={submitHandler} autoComplete="off">
             <div className="form">
               <div className="username">

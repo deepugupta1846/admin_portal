@@ -5,7 +5,10 @@ import Navbar from "./Navbar";
 export const LayOut = () => {
   return (
     <>
-      <Navbar />
+      <div style={{ positions: "fixed" }}>
+        <Navbar />
+      </div>
+
       <Loginpage />
     </>
   );
